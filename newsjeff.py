@@ -17,7 +17,7 @@ time_now = datetime.now(timezone.utc)
 
 # crontab vai executar a cada 10 minutos
 # se for um video recente vai enviar para grupo telegram
-if (time_now - published).seconds < 60*100: #10 minutos
+if (time_now - published).seconds < 60*10: #10 minutos
     # evita carregamento desnecessário caso não precise enviar
     from os import getenv
     import telebot
